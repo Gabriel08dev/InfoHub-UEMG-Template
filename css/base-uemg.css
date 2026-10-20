@@ -1,0 +1,528 @@
+/* ==========================================================================
+   INFOHUB UEMG CARANGOLA — ESTILOS BASE INSTITUCIONAIS PARA PÁGINAS SETORIAIS
+   Diretrizes e Cores Oficiais: https://www.uemg.br/
+   ATENÇÃO: ESTE ARQUIVO É PADRONIZADO E NÃO DEVE SER ALTERADO PELOS ALUNOS.
+   ========================================================================== */
+
+:root {
+  /* Cores Institucionais UEMG */
+  --color-primary: #003366;          /* Azul Institucional Oficial */
+  --color-primary-dark: #002244;     /* Azul Noturno Profundo */
+  --color-primary-light: #004d99;    /* Azul Real / Acento */
+  --color-accent: #d32f2f;           /* Vermelho Institucional de Contraste */
+  --color-accent-amber: #e65100;     /* Âmbar/Laranja de Ação */
+  --color-accent-amber-hover: #bf360c;
+
+  /* Superfícies & Neutros */
+  --color-bg: #f4f6f9;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f8fafc;
+  --color-text-main: #1e293b;
+  --color-text-muted: #526071;
+  --color-text-light: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-focus: #004d99;
+
+  /* Badges & Status */
+  --color-badge-bg: #e0f2fe;
+  --color-badge-text: #0369a1;
+  --color-badge-amber-bg: #fffbeb;
+  --color-badge-amber-text: #b45309;
+
+  /* Tipografia */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-3xl: 2.25rem;
+
+  /* Espaçamento */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Elevação & Bordas */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 4px 12px -2px rgba(0, 51, 102, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 24px -4px rgba(0, 51, 102, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.06);
+
+  /* Transições */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* Reset & Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Utilitários e Acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+/* ==========================================================================
+   HEADER INSTITUCIONAL UEMG (PADRÃO OBRIGATÓRIO)
+   ========================================================================== */
+.site-header {
+  background-color: var(--color-primary-dark);
+  border-bottom: 3px solid var(--color-accent);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  gap: var(--spacing-md);
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.brand-divider {
+  width: 1px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-institution {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+}
+
+.brand-unit {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-text-light);
+  line-height: 1.2;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.btn-back-hub {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-back-hub:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-back-hub:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   HERO BANNER COM FACHADA INSTITUCIONAL (PADRÃO OBRIGATÓRIO)
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 34, 68, 0.92) 0%,
+      rgba(0, 51, 102, 0.86) 60%,
+      rgba(0, 77, 153, 0.75) 100%
+    ),
+    url('../images/UEMG-fachada-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text-light);
+  padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  max-width: 860px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-lead {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-stat-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-stat-item svg {
+  color: #fbbf24;
+}
+
+/* ==========================================================================
+   RODAPÉ INSTITUCIONAL & GOVERNANÇA (PADRÃO OBRIGATÓRIO)
+   ========================================================================== */
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: #cbd5e1;
+  padding: var(--spacing-2xl) 0 0;
+  margin-top: auto;
+  border-top: 3px solid var(--color-accent);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.footer-info h4 {
+  color: #ffffff;
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 700;
+}
+
+.footer-info p {
+  line-height: 1.6;
+  color: #94a3b8;
+  font-size: var(--font-size-sm);
+}
+
+.footer-nav h4 {
+  color: #ffffff;
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 700;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer-links a,
+.footer-links button {
+  color: #94a3b8;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover,
+.footer-links button:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: #64748b;
+}
+
+/* ==========================================================================
+   MODAIS SEMÂNTICOS (<dialog>) — PADRÃO OBRIGATÓRIO
+   ========================================================================== */
+.app-dialog {
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  max-width: 680px;
+  width: 92vw;
+  background-color: var(--color-surface);
+  color: var(--color-text-main);
+  box-shadow: 0 25px 50px -12px rgba(0, 34, 68, 0.25);
+  margin: auto;
+}
+
+.app-dialog::backdrop {
+  background-color: rgba(0, 34, 68, 0.65);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 85vh;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-lg);
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.dialog-header-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dialog-badge {
+  font-size: var(--font-size-xs);
+  color: #e0f2fe;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dialog-title {
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.dialog-close-btn {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.dialog-close-btn:hover {
+  color: #ffffff;
+}
+
+.dialog-body {
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+  font-size: var(--font-size-sm);
+  line-height: 1.65;
+  color: var(--color-text-main);
+}
+
+.dialog-body h4 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.dialog-body h4:first-of-type {
+  margin-top: 0;
+}
+
+.dialog-body p {
+  margin-bottom: var(--spacing-sm);
+  color: #334155;
+}
+
+.dialog-highlight-box {
+  background-color: #f1f5f9;
+  border-left: 4px solid var(--color-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-md) 0;
+}
+
+.dialog-highlight-box h4 {
+  margin-top: 0;
+}
+
+.dialog-list {
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  color: #334155;
+}
+
+.dialog-list li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.dialog-link {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+  transition: color var(--transition-fast);
+}
+
+.dialog-link:hover {
+  color: var(--color-accent-amber);
+}
+
+.dialog-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f8fafc;
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
+
+.dialog-action-btn {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.dialog-action-btn:hover {
+  background-color: var(--color-primary-light);
+}

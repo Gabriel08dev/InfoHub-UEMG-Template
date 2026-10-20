@@ -1,0 +1,111 @@
+/* ==========================================================================
+   ESTILOS LIVRES DO SETOR — DESENVOLVIDO PELA EQUIPE DISCENTE
+   Disciplina: Programação 2 (Extensão BSI / UEMG Carangola)
+   
+   DICA: Você pode e deve utilizar as variáveis declaradas no base-uemg.css:
+   - Cores: var(--color-primary), var(--color-accent-amber), var(--color-surface), etc.
+   - Espaçamentos: var(--spacing-sm), var(--spacing-md), var(--spacing-lg), etc.
+   - Bordas e Sombras: var(--radius-md), var(--radius-lg), var(--shadow-card), etc.
+   ========================================================================== */
+
+/* Seção Principal do Setor */
+.setor-main-section {
+  padding: var(--spacing-2xl) 0;
+  flex-grow: 1;
+}
+
+/* Título de Seção Interna */
+.setor-section-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.setor-section-subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.setor-section-title {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1.25;
+}
+
+.setor-section-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  max-width: 680px;
+  margin-top: var(--spacing-xs);
+}
+
+/* Grid de Conteúdo do Setor (Exemplo: 2 ou 3 colunas) */
+.setor-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 768px) {
+  .setor-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+/* Card de Conteúdo do Setor */
+.setor-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.setor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.setor-card h3 {
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.setor-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+/* Box de Destaque / Avisos */
+.setor-callout {
+  background-color: #f8fafc;
+  border-left: 4px solid var(--color-accent-amber);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.setor-callout h4 {
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.setor-callout p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   ADICIONE ABAIXO OS SEUS PRÓPRIOS ESTILOS ESPECÍFICOS PARA O SETOR:
+   ========================================================================== */
