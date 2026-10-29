@@ -1,0 +1,8 @@
+dist/
+.qa/
+.sites-runtime/
+.sites-checkout*/
+node_modules/
+*.log
+.env
+.env.*

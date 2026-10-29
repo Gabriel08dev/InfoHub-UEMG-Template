@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Personalize o título e a descrição com o nome do seu setor -->
-  <title>[Nome do Setor] — InfoHub UEMG Carangola</title>
+  <title>InfoHub UEMG — Orientações de acesso institucional</title>
   <meta name="description"
-    content="Portal Informativo do [Nome do Setor] da UEMG Unidade Carangola. Normativas, fluxos oficiais e autoatendimento acadêmico." />
+    content="Orientações para acessar o Lyceum e o e-mail institucional, recuperar seu acesso e encontrar a secretaria da UEMG Carangola. Projeto acadêmico de extensão." />
   <meta name="theme-color" content="#003366" />
 
   <!-- Favicon e Folhas de Estilo -->
@@ -19,13 +18,14 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
   <!-- =======================================================================
          ÁREA RESTRITA 1: CABEÇALHO INSTITUCIONAL OFICIAL UEMG (NÃO ALTERAR)
          Mantém a credibilidade, identidade e navegação de retorno ao Hub.
          ======================================================================= -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="https://infohub-uemgcarangola.vercel.app/" class="brand-wrapper"
+      <a href="https://infohub-uemgcarangola.vercel.app/" class="brand-wrapper" target="_blank" rel="noopener noreferrer"
         title="InfoHub UEMG Carangola — Voltar à Página Principal">
         <img src="./images/logo_uemg_2.jpg" alt="Logotipo Oficial da UEMG" class="brand-logo" width="135" height="46" />
         <div class="brand-divider" aria-hidden="true"></div>
@@ -36,7 +36,7 @@
       </a>
 
       <div class="header-actions">
-        <a href="https://infohub-uemgcarangola.vercel.app/" class="btn-back-hub"
+        <a href="https://infohub-uemgcarangola.vercel.app/" class="btn-back-hub" target="_blank" rel="noopener noreferrer"
           title="Voltar ao portal principal InfoHub">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -57,17 +57,16 @@
   <section class="hero-section" aria-labelledby="hero-heading">
     <div class="container hero-content">
       <!-- Substitua pelo número e categoria do seu setor -->
-      <div class="hero-badge">Setor 01 • [Categoria do Setor]</div>
+      <div class="hero-badge">InfoHub UEMG • Orientação acadêmica</div>
 
       <!-- Substitua pelo nome oficial do setor -->
       <h1 id="hero-heading" class="hero-title">
-        [Nome Completo do Setor Institucional]
+        Orientações de acesso aos sistemas da UEMG.
       </h1>
 
       <!-- Substitua pela síntese do objetivo deste portal setorial -->
       <p class="hero-lead">
-        Guia de autoatendimento, fluxos de processos, normativas vigentes e esclarecimento de dúvidas frequentes da
-        comunidade acadêmica da UEMG Carangola.
+        Consulte orientações para acessar os sistemas institucionais, recuperar credenciais e localizar os canais de atendimento.
       </p>
 
       <!-- Indicadores rápidos do setor (personalize os textos abaixo se desejar) -->
@@ -78,7 +77,7 @@
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>
-          <span>Fluxos Homologados</span>
+          <span>Tutoriais de acesso</span>
         </div>
         <div class="hero-stat-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -88,14 +87,14 @@
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          <span>Calendário Atualizado</span>
+          <span>Lyceum e e-mail institucional</span>
         </div>
         <div class="hero-stat-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
-          <span>Canais Oficiais UEMG</span>
+          <span>Sem coleta de credenciais</span>
         </div>
       </div>
     </div>
@@ -106,61 +105,119 @@
          Aqui a sua equipe tem total liberdade para criar a estrutura semântica,
          seções informativas, formulários, fluxogramas, cards e perguntas frequentes.
          ======================================================================= -->
-  <main id="main-content" role="main" class="setor-main-section">
+  <main id="main-content" tabindex="-1" class="setor-main-section">
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-academic" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 3h7v7M21 3 10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="icon-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .6-1.5 1-1.5 2M12 16v.1"/></symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    </svg>
+
+    <nav class="section-nav" aria-label="Navegação desta página">
+      <div class="container section-nav-inner">
+        <a href="#sistemas">Sistemas</a><a href="#recuperar">Recuperação</a><a href="#tutoriais">Tutoriais</a><a href="#apoio">Atendimento</a><a href="#duvidas">Dúvidas frequentes</a><a href="#sobre">Projeto</a>
+      </div>
+    </nav>
+
     <div class="container">
+      <section class="welcome-card" aria-labelledby="welcome-title">
+        <div class="welcome-icon"><svg class="icon" aria-hidden="true"><use href="#icon-help"/></svg></div>
+        <div class="welcome-copy"><p class="eyebrow">Recuperação de acesso institucional</p><h2 id="welcome-title">Orientações para recuperar seu acesso</h2><p>Consulte o procedimento específico do sistema e os canais de suporte.</p></div>
+        <a class="button button-primary" href="#recuperar">Consultar o guia <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </section>
+      <p class="project-notice">Projeto acadêmico de extensão desenvolvido por estudantes. O InfoHub não é um serviço oficial de autenticação da UEMG. <a href="#sobre">Sobre o projeto</a>.</p>
 
-      <!-- Cabeçalho de Introdução do Setor -->
-      <header class="setor-section-header">
-        <p class="setor-section-subtitle">Autoatendimento & Informações</p>
-        <h2 class="setor-section-title">Serviços e Orientações do Setor</h2>
-        <p class="setor-section-desc">
-          Selecione o procedimento desejado abaixo para consultar os requisitos, documentação necessária e prazos
-          regulamentares.
-        </p>
-      </header>
+      <section id="sistemas" class="content-section" aria-labelledby="systems-title">
+        <header class="section-heading"><div><p class="eyebrow">Acessos institucionais</p><h2 id="systems-title">Sistemas acadêmicos e de comunicação</h2></div><p>Consulte a finalidade de cada sistema<br>e utilize os respectivos acessos oficiais.</p></header>
+        <div class="systems-grid">
+          <article class="system-card">
+            <div class="card-top"><span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-academic"/></svg></span><span class="pill">Vida acadêmica</span></div>
+            <h3>Portal do Aluno <span>Lyceum</span></h3><p>Sistema de consulta de notas, frequência, matrícula e dados cadastrais do estudante.</p>
+            <div class="card-links"><a class="button button-outline" data-official="lyceum" href="https://uemg.lyceum.com.br/aluno/#/login" target="_blank" rel="noopener noreferrer">Acessar o Lyceum <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a class="text-link" href="#recuperar" data-start-guide="lyceum">Recuperar acesso ao Lyceum <span aria-hidden="true">→</span></a><a class="source-link" data-official="lyceumGuidance" href="https://www.uemg.br/component/content/article/510-a-uemg/uemg-lyceum/20833-uemg-lyceum?Itemid=437" target="_blank" rel="noopener noreferrer">Informações oficiais sobre o Lyceum ↗</a></div>
+          </article>
+          <article class="system-card system-card-email">
+            <div class="card-top"><span class="icon-tile icon-tile-warm"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></span><span class="pill">Comunicação</span></div>
+            <h3>E-mail institucional <span>Microsoft 365</span></h3><p>Canal de comunicação para recebimento de avisos, comunicados e mensagens da Universidade.</p>
+            <div class="card-links"><a class="button button-outline" data-official="email" href="https://outlook.cloud.microsoft/?realm=discente.uemg.br" target="_blank" rel="noopener noreferrer">Acessar o e-mail institucional <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a class="text-link" href="#recuperar" data-start-guide="email">Recuperar acesso ao e-mail <span aria-hidden="true">→</span></a><a class="source-link" data-official="emailGuidance" href="https://www.uemg.br/publicacoes/22820-e-mail-institucional-da-uemg-acesso-e-orientacoes-para-estudantes" target="_blank" rel="noopener noreferrer">Orientações oficiais para o e-mail ↗</a></div>
+          </article>
+        </div>
+      </section>
 
-      <!-- Exemplo de Grid de Cards (Substitua ou expanda conforme a modelagem do grupo) -->
-      <div class="setor-cards-grid">
+      <section class="how-it-works" aria-labelledby="how-title">
+        <h2 id="how-title">Etapas de orientação</h2>
+        <ol><li><span class="step-dot">1</span><div><h3>Identificação do sistema</h3><p>Lyceum ou e-mail institucional.</p></div></li><li><span class="step-dot">2</span><div><h3>Consulta ao procedimento</h3><p>Recuperação no ambiente oficial.</p></div></li><li><span class="step-dot">3</span><div><h3>Encaminhamento ao suporte</h3><p>Canais institucionais de atendimento.</p></div></li></ol>
+      </section>
 
-        <!-- Card de Exemplo 1: Processos e Fluxos -->
-        <article class="setor-card">
-          <h3>📋 Como Solicitar Atendimento</h3>
-          <p>
-            Descreva aqui o passo a passo que o discente ou docente deve seguir para abrir uma solicitação junto ao
-            setor, formulários necessários e prazos médios de resposta.
-          </p>
-        </article>
+      <section id="recuperar" class="content-section recovery-section" aria-labelledby="recovery-title">
+        <div class="recovery-intro"><p class="eyebrow">Procedimentos por sistema</p><h2 id="recovery-title">Guia de recuperação de acesso</h2><p>Selecione o sistema para consultar o procedimento aplicável e os canais de atendimento.</p><div class="privacy-note"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><p>Proteção de dados pessoais.<br><strong>Não são solicitados CPF, senha ou matrícula.</strong></p></div><p class="small-text">O guia não acessa contas nem realiza alterações de senha.</p></div>
+        <div class="recovery-panel">
+          <div id="guide-fallback"><h3>Em qual sistema ocorre a dificuldade de acesso?</h3><p>Consulte o tutorial correspondente para verificar as orientações de recuperação.</p><div class="button-row"><a class="button button-outline" href="#tutorial-lyceum">Portal do Aluno — Lyceum</a><a class="button button-outline" href="#tutorial-email">E-mail institucional</a></div></div>
+          <div id="recovery-flow" hidden>
+            <ol class="flow-progress" aria-label="Etapas do guia"><li data-progress="choose" aria-current="step"><span>1</span> Escolha</li><li data-progress="instructions"><span>2</span> Orientações</li><li data-progress="result"><span>3</span> Próximo passo</li></ol>
+            <div id="flow-content"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Card de Exemplo 2: Normativas e Regulamentos -->
-        <article class="setor-card">
-          <h3>📑 Regulamentos e Portarias</h3>
-          <p>
-            Links diretos para editais, resoluções do COEPE e manuais oficiais que fundamentam as regras deste setor
-            acadêmico.
-          </p>
-        </article>
+      <section id="tutoriais" class="content-section" aria-labelledby="tutorials-title">
+        <header class="section-heading"><div><p class="eyebrow">Instruções de consulta permanente</p><h2 id="tutorials-title">Tutoriais de acesso e recuperação</h2></div><p>Consulte os procedimentos específicos<br>de cada sistema institucional.</p></header>
+        <div class="tutorial-grid">
+          <article id="tutorial-lyceum" class="tutorial-card" aria-labelledby="lyceum-tutorial-title">
+            <div class="tutorial-heading"><span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-academic"/></svg></span><div><p class="eyebrow">Portal do Aluno</p><h3 id="lyceum-tutorial-title">Recuperar acesso ao Lyceum</h3></div></div>
+            <ol class="numbered-steps" data-tutorial-steps="lyceum"><li><strong>Abra o Portal do Aluno.</strong><p>Use o endereço oficial do Lyceum da UEMG.</p></li><li><strong>Escolha “Esqueceu a senha?”.</strong><p>A opção fica na tela de entrada. Siga as solicitações do próprio sistema.</p></li><li><strong>Conclua a recuperação no portal.</strong><p>Se não conseguir avançar ou não receber as orientações, procure a secretaria para verificar seu cadastro.</p></li></ol>
+            <div class="tutorial-note" data-tutorial-note="lyceum"><strong>Orientações adicionais em confirmação.</strong> Siga as opções exibidas pelo portal. Detalhes do fluxo de recuperação para os diferentes perfis de estudante aguardam confirmação da unidade. Se não conseguir avançar, procure a secretaria.</div>
+            <a class="button button-outline" data-official="lyceum" href="https://uemg.lyceum.com.br/aluno/#/login" target="_blank" rel="noopener noreferrer">Abrir o Lyceum <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <p class="source-caption">Base: <a data-official="lyceumTutorial" href="https://www.uemg.br/ensino-ibirite/horario-de-aulas/category/3025-1-semestre?download=16020%3Aorientacoes-para-matricula" target="_blank" rel="noopener noreferrer">orientação publicada pela UEMG (PDF)</a>, que mostra a opção de recuperação. Encaminhamento à secretaria: entrevista do projeto.</p>
+          </article>
+          <article id="tutorial-email" class="tutorial-card" aria-labelledby="email-tutorial-title">
+            <div class="tutorial-heading"><span class="icon-tile icon-tile-warm"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></span><div><p class="eyebrow">Microsoft 365</p><h3 id="email-tutorial-title">Recuperar o e-mail institucional</h3></div></div>
+            <p class="tutorial-prelude">O endereço institucional pode ser consultado na aba “Dados cadastrais” do Lyceum. Em caso de indisponibilidade, solicite orientação à Secretaria Acadêmica.</p>
+            <ol class="numbered-steps" data-tutorial-steps="email"><li><strong>Abra o Outlook institucional.</strong><p>Informe seu e-mail de estudante, avance e escolha “Esqueci minha senha”.</p></li><li><strong>Faça a verificação solicitada.</strong><p>Na sequência, selecione o link “entrar em contato com o seu administrador”.</p></li><li><strong>Continue no ambiente institucional.</strong><p>Na página indicada, informe o CPF e o e-mail institucional e selecione “Recuperar”. Faça isso somente no serviço oficial, nunca no InfoHub.</p></li><li><strong>Confira seu e-mail pessoal.</strong><p>Use o token enviado ao endereço cadastrado no Lyceum. Veja também o spam. Se o link expirar, reinicie o processo.</p></li></ol>
+            <div class="tutorial-note" data-tutorial-note="email"><strong>Atualização cadastral.</strong> Caso o e-mail pessoal esteja incorreto ou indisponível, solicite a atualização à Secretaria Acadêmica. Este procedimento é específico do e-mail institucional.</div>
+            <a class="button button-outline" data-official="email" href="https://outlook.cloud.microsoft/?realm=discente.uemg.br" target="_blank" rel="noopener noreferrer">Abrir o e-mail institucional <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <p class="source-caption">Fonte: <a data-official="emailGuidance" href="https://www.uemg.br/publicacoes/22820-e-mail-institucional-da-uemg-acesso-e-orientacoes-para-estudantes" target="_blank" rel="noopener noreferrer">tutorial oficial de acesso e recuperação da UEMG</a>, publicado em 04/05/2026.</p>
+          </article>
+        </div>
+      </section>
+    </div>
 
-        <!-- Card de Exemplo 3: Contatos e Horários -->
-        <article class="setor-card">
-          <h3>⏰ Horários e Equipe Responsável</h3>
-          <p>
-            Informações sobre coordenação, e-mails institucionais oficiais (@uemg.br) e plantões presenciais na Unidade
-            Carangola.
-          </p>
-        </article>
-
+    <section id="apoio" class="support-section" aria-labelledby="support-title">
+      <div class="container">
+        <header class="section-heading"><div><p class="eyebrow">Canais da UEMG Carangola</p><h2 id="support-title">Atendimento e suporte</h2></div><p>Solicite orientação se a recuperação falhar,<br>o cadastro estiver incorreto ou o acesso permanecer bloqueado.</p></header>
+        <div class="support-grid">
+          <article class="support-card support-card-primary"><span class="pill">Atendimento acadêmico</span><h3>Secretaria Acadêmica</h3><p>Informe o sistema afetado e as etapas já realizadas. Senhas e códigos de recuperação não devem ser enviados.</p><a class="contact-email" data-contact="secretariatEmail" href="mailto:secretaria.carangola@uemg.br">secretaria.carangola@uemg.br</a><div class="contact-actions"><a data-contact="secretariatPhone" href="tel:+553237417524">(32) 3741-7524</a><button class="copy-button" type="button" data-copy-email hidden>Copiar e-mail</button></div><p id="copy-status" class="copy-status" role="status"></p><p class="support-caption">Segundo a entrevista do projeto, o atendimento pode começar por e-mail ou presencialmente. A secretaria encaminha à TI os casos que exigem intervenção técnica.</p></article>
+          <article class="support-card"><span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-location"/></svg></span><h3>UEMG Carangola</h3><address>Praça dos Estudantes, 23<br>Santa Emília · Carangola, MG<br>CEP 36800-000</address><p class="small-text"><strong>Horário da secretaria:</strong> pendente de confirmação. Consulte o setor antes de se deslocar.</p><a class="text-link" data-official="contacts" href="https://www.uemg.br/carangola-institucional/telefones-uteis" target="_blank" rel="noopener noreferrer">Ver canais oficiais <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></article>
+          <article class="support-card"><span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-help"/></svg></span><h3>Informática da unidade</h3><p>Canal técnico publicado pela unidade. Para dificuldades de senha, comece pela secretaria, conforme o relato da entrevista.</p><a class="contact-email" data-contact="itEmail" href="mailto:informatica.carangola@uemg.br">informatica.carangola@uemg.br</a><a data-contact="itPhone" href="tel:+553237414087">(32) 3741-4087</a><p class="support-caption">Não há prazo de resposta ou horário específico de atendimento confirmado para este guia.</p></article>
+        </div>
+        <p class="source-caption">Contatos e endereço: <a data-official="contacts" href="https://www.uemg.br/carangola-institucional/telefones-uteis" target="_blank" rel="noopener noreferrer">página oficial de Carangola</a>. Conferência em <time datetime="2026-10-29">29 de outubro de 2026</time>. O encaminhamento à TI e a possibilidade de atendimento remoto são relatos da entrevista, não uma norma técnica publicada.</p>
       </div>
+    </section>
 
-      <!-- Box de Destaque / Importante -->
-      <div class="setor-callout" role="note">
-        <h4>💡 Atenção aos Prazos do Calendário Acadêmico</h4>
-        <p>
-          Lembre-se de conferir as datas-limite no calendário oficial da UEMG antes de submeter sua documentação.
-        </p>
-      </div>
+    <div class="container">
+      <section id="duvidas" class="content-section faq-section" aria-labelledby="faq-title">
+        <div class="faq-intro"><p class="eyebrow">Esclarecimentos sobre acesso</p><h2 id="faq-title">Perguntas frequentes</h2><p>Consulte informações sobre recuperação de acesso e encaminhamento aos setores responsáveis.</p><a class="text-link" href="#apoio">Consultar canais de atendimento <span aria-hidden="true">→</span></a></div>
+        <div class="faq-list">
+          <details><summary>Como proceder em caso de esquecimento de senha?</summary><p>Identifique o sistema e consulte o <a href="#recuperar">guia de recuperação</a>. O procedimento deve ser realizado no serviço oficial correspondente ao Lyceum ou ao e-mail institucional.</p></details>
+          <details><summary>O que fazer se a recuperação não for concluída?</summary><p>Consulte o tutorial e procure a Secretaria Acadêmica caso a dificuldade persista. Para o e-mail institucional, verifique também a pasta de spam e a atualização do e-mail pessoal cadastrado no Lyceum.</p></details>
+          <details><summary>O atendimento presencial é obrigatório?</summary><p>Segundo a entrevista realizada pelo projeto, é possível iniciar o atendimento por e-mail. O atendimento presencial também é uma opção. Eventuais providências adicionais devem ser confirmadas com o setor.</p></details>
+          <details><summary>O Lyceum e o e-mail institucional utilizam a mesma senha?</summary><p>São serviços distintos. A alteração de senha em um sistema não deve ser interpretada como alteração no outro. O Lyceum reúne informações acadêmicas; o e-mail é acessado pelo Microsoft 365 e possui procedimento próprio de recuperação.</p></details>
+          <details><summary>Qual setor atende os casos não resolvidos?</summary><p>A Secretaria Acadêmica é o ponto de contato indicado na entrevista. Conforme o relato, os casos não resolvidos são encaminhados à TI para intervenção. Esse encaminhamento não constitui uma regra técnica confirmada para todos os sistemas.</p></details>
+          <details><summary>Onde consultar os canais oficiais de atendimento?</summary><p>Na <a href="#apoio">seção de atendimento</a> e na <a data-official="contacts" href="https://www.uemg.br/carangola-institucional/telefones-uteis" target="_blank" rel="noopener noreferrer">página oficial de contatos da UEMG Carangola</a>. Horários e disponibilidade devem ser confirmados diretamente com o setor.</p></details>
+          <details><summary>Como consultar o endereço de e-mail institucional?</summary><p>A orientação publicada pela UEMG é consultar a aba “Dados cadastrais” do Portal do Aluno — Lyceum. Caso o acesso ao portal também esteja indisponível, solicite orientação à Secretaria Acadêmica.</p></details>
+          <details><summary>O InfoHub solicita dados pessoais ou altera senhas?</summary><p>Não. O InfoHub disponibiliza orientações e links. Não possui login nem solicita CPF, senha, matrícula ou código de verificação. A identificação eventualmente exigida para recuperação deve ocorrer apenas no serviço oficial.</p></details>
+        </div>
+      </section>
 
-      <!-- FIM DO CONTEÚDO EXEMPLIFICATIVO DO GRUPO -->
+      <section id="sobre" class="content-section about-section" aria-labelledby="about-title">
+        <div class="about-copy"><p class="eyebrow">Sobre a iniciativa</p><h2 id="about-title">Informação acessível à comunidade acadêmica.</h2><p>O InfoHub UEMG é um projeto acadêmico de extensão de estudantes de Sistemas de Informação da UEMG Carangola, no contexto da disciplina de Programação 2. A iniciativa reúne orientações de acesso aos sistemas institucionais e informações sobre os canais de atendimento.</p><p>A entrevista com a Secretaria Acadêmica contribuiu para identificar as dificuldades dos estudantes. Os tutoriais indicam as publicações oficiais utilizadas, e os relatos da entrevista são identificados separadamente.</p><p class="about-disclaimer">Este projeto não representa um serviço oficial da Universidade, não substitui o atendimento institucional e não presume endosso da UEMG.</p><a class="text-link" href="https://github.com/Gabriel08dev/InfoHub-UEMG-Template" target="_blank" rel="noopener noreferrer">Consultar o repositório do projeto <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
+        <aside class="project-details" aria-label="Informações do projeto"><span class="project-monogram" aria-hidden="true">ih<span>.</span></span><h3>InfoHub UEMG</h3><p>Orientação, autonomia e acesso.</p><dl><div><dt>Contexto acadêmico</dt><dd>Extensão · Programação 2<br>Sistemas de Informação · Carangola</dd></div><div><dt>Equipe e orientação docente</dt><dd>Nomes e responsabilidades pendentes de confirmação pela equipe.</dd></div><div><dt>Próximas atualizações</dt><dd>Confirmar horários dos setores e revisar as orientações com a unidade.</dd></div></dl></aside>
+      </section>
 
+      <section id="fontes" class="sources-section" aria-labelledby="sources-title"><div><p class="eyebrow">Links e referências institucionais</p><h2 id="sources-title">Acessos e orientações oficiais</h2><p>Última conferência: <time datetime="2026-10-29">29/10/2026</time>. Em caso de divergência, prevalece a orientação institucional mais recente.</p></div><ul><li><a data-official="university" href="https://www.uemg.br/" target="_blank" rel="noopener noreferrer">Portal da UEMG ↗</a></li><li><a data-official="campus" href="https://www.uemg.br/carangola" target="_blank" rel="noopener noreferrer">Unidade Carangola ↗</a></li><li><a data-official="lyceum" href="https://uemg.lyceum.com.br/aluno/#/login" target="_blank" rel="noopener noreferrer">Portal do Aluno — Lyceum ↗</a></li><li><a data-official="email" href="https://outlook.cloud.microsoft/?realm=discente.uemg.br" target="_blank" rel="noopener noreferrer">E-mail institucional ↗</a></li><li><a data-official="lyceumGuidance" href="https://www.uemg.br/component/content/article/510-a-uemg/uemg-lyceum/20833-uemg-lyceum?Itemid=437" target="_blank" rel="noopener noreferrer">Informações sobre o Lyceum ↗</a></li><li><a data-official="emailGuidance" href="https://www.uemg.br/publicacoes/22820-e-mail-institucional-da-uemg-acesso-e-orientacoes-para-estudantes" target="_blank" rel="noopener noreferrer">Orientações para o e-mail ↗</a></li><li><a data-official="contacts" href="https://www.uemg.br/carangola-institucional/telefones-uteis" target="_blank" rel="noopener noreferrer">Contatos de Carangola ↗</a></li></ul></section>
     </div>
   </main>
   <!-- =======================================================================
@@ -216,7 +273,7 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2026 UEMG Unidade Carangola — Sistemas de Informação. Todos os direitos reservados.</p>
+        <p>&copy; 2026 InfoHub UEMG Carangola · Projeto acadêmico de extensão.</p>
       </div>
     </div>
   </footer>
@@ -262,22 +319,22 @@
         </ul>
         <h4>Ética e Fidelidade das Informações</h4>
         <p>
-          Todas as informações consolidadas nos portais setoriais baseiam-se em normativas oficiais, portarias
-          institucionais e validação com os respectivos coordenadores e servidores da UEMG Carangola.
+          As orientações deste guia indicam suas fontes oficiais ou sua origem na entrevista do projeto.
+          Informações não confirmadas permanecem identificadas como pendentes. O InfoHub não é um serviço oficial
+          de autenticação nem presume endosso institucional da UEMG.
         </p>
         <h4>Transparência sobre o Uso de Inteligência Artificial</h4>
         <p>
-          Em consonância com as diretrizes contemporâneas de ética e inovação acadêmica, este projeto utilizou
-          ferramentas de Inteligência Artificial Generativa como par de programação e acelerador técnico sob supervisão
-          e direcionamento pedagógico e docente.
+          Ferramentas de inteligência artificial apoiaram a implementação. A equipe do projeto é responsável
+          pela revisão do conteúdo e pela confirmação dos dados acadêmicos e institucionais pendentes.
         </p>
-        <h4>Código Aberto & Repositório Institucional</h4>
+        <h4>Repositório do Projeto</h4>
         <p>
-          O projeto é de código aberto e está disponível publicamente para consulta, auditoria e colaboração no GitHub:
+          O repositório desta adaptação está disponível publicamente para consulta no GitHub:
           <br />
-          <a href="https://github.com/CursoSistemasUEMGCarangola/InfoHub-UEMG-Carangola" target="_blank"
+          <a href="https://github.com/Gabriel08dev/InfoHub-UEMG-Template" target="_blank"
             rel="noopener noreferrer" class="dialog-link">
-            CursoSistemasUEMGCarangola/InfoHub-UEMG-Carangola
+            Gabriel08dev/InfoHub-UEMG-Template
           </a>
         </p>
       </div>
@@ -312,9 +369,9 @@
         </p>
         <h4>2. Custódia e Links Externos</h4>
         <p>
-          Os 10 serviços setoriais acessados através dos cartões foram desenvolvidos por estudantes da disciplina de
-          Programação 2. A custódia técnica dos conteúdos e links oficiais é assegurada por meio de <em>forks</em>
-          controlados na organização institucional da UEMG no GitHub, garantindo integridade e perenidade.
+          Este guia reúne links externos e orientações sobre o Lyceum, o e-mail institucional e o atendimento.
+          A autenticação e a recuperação de senhas são realizadas nos serviços oficiais. Não há garantia de
+          disponibilidade desses serviços nem de resposta dos setores em prazo específico.
         </p>
         <h4>3. Atualização de Conteúdos</h4>
         <p>
@@ -349,20 +406,20 @@
       </header>
       <div class="dialog-body">
         <p>
-          Esta política reafirma o compromisso do <strong>InfoHub UEMG Carangola</strong> com a transparência, a ética
-          informacional e a conformidade irrestrita com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº
-            13.709/2018)</strong>.
+          Esta política descreve o tratamento de informações nesta página do <strong>InfoHub UEMG Carangola</strong>.
+          O guia foi desenvolvido com atenção à privacidade e à minimização de dados.
         </p>
         <h4>1. Ausência de Coleta de Dados Pessoais</h4>
         <p>
-          O InfoHub é uma aplicação estática e pública de consulta. <strong>Não coletamos, não solicitamos e não
-            armazenamos nenhum dado pessoal identificável</strong> (como nome, CPF, e-mail ou matrícula acadêmica) dos
-          visitantes.
+          O guia é uma página estática de consulta. <strong>Não possui formulário de identificação, login ou
+          armazenamento de CPF, senha, nome, e-mail ou matrícula dos visitantes.</strong> As escolhas do guia
+          interativo ficam apenas na memória da página e são descartadas ao recarregar.
         </p>
         <h4>2. Cookies e Rastreamento</h4>
         <p>
-          O portal <strong>não utiliza cookies de rastreamento comercial ou publicitário</strong>. A navegação é
-          completamente anônima.
+          O código do guia não adiciona cookies, publicidade, ferramentas de análise ou rastreamento.
+          O provedor de hospedagem pode tratar registros técnicos de acesso ou exigir autenticação conforme
+          sua própria política; esta página não controla esse tratamento.
         </p>
         <h4>3. Links para Páginas Externas</h4>
         <p>
@@ -379,6 +436,7 @@
   <!-- SCRIPTS -->
   <!-- 1. Script Base Institucional (Obrigatório - Não Alterar) -->
   <script src="./js/base-uemg.js"></script>
+  <script src="./js/config.js"></script>
   <!-- 2. Script do Setor (Lógica Livre dos Estudantes) -->
   <script src="./js/setor.js"></script>
 </body>
