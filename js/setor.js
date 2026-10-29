@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     link.href = contact.href;
     link.textContent = contact.label;
   });
+  document.querySelectorAll('[data-project-link]').forEach((link) => {
+    const url = config.projectLinks?.[link.dataset.projectLink];
+    if (url) link.href = url;
+  });
 
   initRecoveryGuide(config);
   initEmailCopy(config);

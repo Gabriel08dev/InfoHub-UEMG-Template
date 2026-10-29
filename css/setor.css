@@ -164,6 +164,15 @@ section[id], article[id] { scroll-margin-top: 100px; }
 .project-details dl > div { padding-top: 16px; border-top: 1px solid var(--color-border); margin-top: 16px; }
 .project-details dt { font-size: .73rem; color: var(--color-primary); font-weight: 700; margin-bottom: 5px; }
 .project-details dd { font-size: .76rem; line-height: 1.8; color: var(--hub-muted); }
+.team-section { padding-top: 0; padding-bottom: 64px; }
+.team-introduction { max-width: 780px; margin: -8px 0 26px; color: var(--hub-muted); font-size: .9rem; line-height: 1.8; }
+.team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.developer-card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 28px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--hub-radius); box-shadow: var(--shadow-card); }
+.developer-initials { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--hub-soft); color: var(--color-primary); font-size: .9rem; font-weight: 750; }
+.developer-card h3 { margin-top: 20px; color: var(--hub-ink); font-size: 1.08rem; letter-spacing: -.02em; line-height: 1.5; }
+.developer-card p { margin: 7px 0 22px; color: var(--hub-muted); font-size: .82rem; }
+.developer-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-top: auto; color: var(--color-primary); font-size: .85rem; font-weight: 650; }
+.developer-link .icon { width: 16px; height: 16px; }
 .sources-section { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 30px; border-top: 1px solid var(--color-border); }
 .sources-section .eyebrow { margin-bottom: 5px; }
 .sources-section h2 { color: var(--hub-ink); font-size: 1rem; }
@@ -233,6 +242,9 @@ section[id], article[id] { scroll-margin-top: 100px; }
   .support-card-primary { grid-column: auto; }
   .faq-intro > p:not(.eyebrow) { max-width: 100%; }
   .about-section { padding-bottom: 40px; }
+  .team-section { padding-bottom: 44px; }
+  .team-grid { grid-template-columns: 1fr; gap: 16px; }
+  .developer-card { padding: 24px; }
   .about-copy h2 br { display: none; }
   .sources-section { flex-direction: column; align-items: start; gap: 18px; }
   .sources-section ul { flex-shrink: 1; }

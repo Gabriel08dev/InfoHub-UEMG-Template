@@ -28,6 +28,7 @@ Acesse `http://127.0.0.1:4173`. Encerre o servidor com Ctrl+C. É possível esco
 - Tutoriais numerados, com fontes e avisos, disponíveis independentemente do guia.
 - E-mail, telefone e endereço verificados da secretaria; canais publicados da informática.
 - FAQ acessível com `details`/`summary`, apresentação do projeto e informações de governança.
+- Seção de desenvolvedores do Grupo 6, com publicações no LinkedIn e acesso ao repositório do projeto no GitHub.
 - Navegação interna, salto para o conteúdo, foco visível, redução de movimento e layout responsivo.
 - Nenhum formulário de credenciais, CPF ou matrícula; sem backend, cookies de aplicação, analytics ou armazenamento de escolhas.
 
@@ -69,8 +70,8 @@ Consulte [o registro de validação](docs/validacao.md) para os caminhos exercit
 ## Atualizar informações
 
 1. Consulte a fonte oficial e confirme a data e o conteúdo aplicável à unidade.
-2. Atualize URLs e contatos em `js/config.js`.
-3. Atualize também os links HTML com `data-official`/`data-contact`, preservando o funcionamento sem JavaScript. A verificação detecta divergências.
+2. Atualize URLs e contatos em `js/config.js`. Os links do GitHub e das publicações da equipe estão em `projectLinks`; a identificação dos integrantes está em `docs/equipe.md` e na seção `equipe` do HTML.
+3. Atualize também os links HTML com `data-official`/`data-contact`/`data-project-link`, preservando o funcionamento sem JavaScript. A verificação detecta divergências.
 4. Edite os passos em `index.html`, nos artigos `tutorial-lyceum` e `tutorial-email`. O guia reutiliza automaticamente esses passos.
 5. Revise FAQ, avisos, datas e `docs/fontes-e-pendencias.md` quando uma orientação mudar.
 6. Execute as verificações e repita os caminhos afetados no navegador.
@@ -86,7 +87,7 @@ Fontes principais, conferidas em **29/10/2026**:
 - [Endereço e Canais de Comunicação — Carangola](https://www.uemg.br/carangola-institucional/telefones-uteis).
 - Entrevista com representante da secretaria, fornecida pela equipe no briefing; seus relatos são identificados separadamente de documentação oficial.
 
-**Permanecem a confirmar:** horários específicos dos setores, prazos de resposta, detalhes técnicos do fluxo do Lyceum para diferentes perfis e nomes/responsabilidades da equipe e orientação docente. Esses pontos estão sinalizados no site. Não foram atribuídos os horários gerais da unidade à secretaria.
+**Permanecem a confirmar:** horários específicos dos setores, prazos de resposta, detalhes técnicos do fluxo do Lyceum para diferentes perfis e identificação/responsabilidades da orientação docente. Esses pontos estão sinalizados no site. Não foram atribuídos os horários gerais da unidade à secretaria. A identificação dos integrantes do Grupo 6 e suas publicações no LinkedIn foi fornecida pelo responsável pelo projeto; consulte `docs/equipe.md`.
 
 ## Privacidade e governança
 

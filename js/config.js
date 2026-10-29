@@ -1,4 +1,4 @@
-/** Fontes e canais públicos. Nunca adicionar dados de estudantes neste arquivo. */
+/** Links públicos institucionais e do projeto. Nunca adicionar credenciais ou identificadores acadêmicos. */
 window.InfoHubConfig = Object.freeze({
   checkedAt: '2026-10-29',
   links: Object.freeze({
@@ -10,6 +10,12 @@ window.InfoHubConfig = Object.freeze({
     lyceumTutorial: 'https://www.uemg.br/ensino-ibirite/horario-de-aulas/category/3025-1-semestre?download=16020%3Aorientacoes-para-matricula',
     emailGuidance: 'https://www.uemg.br/publicacoes/22820-e-mail-institucional-da-uemg-acesso-e-orientacoes-para-estudantes',
     contacts: 'https://www.uemg.br/carangola-institucional/telefones-uteis'
+  }),
+  projectLinks: Object.freeze({
+    repository: 'https://github.com/Gabriel08dev/InfoHub-UEMG-Template',
+    gabrielLinkedin: 'https://lnkd.in/p/duUazDCM',
+    davyLinkedin: 'https://lnkd.in/p/dqvh47RH',
+    samuelLinkedin: 'https://lnkd.in/p/d-cW65JH'
   }),
   contacts: Object.freeze({
     secretariatEmail: Object.freeze({ label: 'secretaria.carangola@uemg.br', href: 'mailto:secretaria.carangola@uemg.br' }),

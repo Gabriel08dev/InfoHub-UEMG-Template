@@ -31,6 +31,7 @@ for (const [tag] of html.matchAll(/<(?:a|use)\b[^>]*>/g)) {
   }
   if (attr['data-official']) assert.equal(attr.href, config.links[attr['data-official']], `Link HTML divergente da configuração: ${attr['data-official']}`);
   if (attr['data-contact']) assert.equal(attr.href, config.contacts[attr['data-contact']].href, 'Contato HTML divergente da configuração');
+  if (attr['data-project-link']) assert.equal(attr.href, config.projectLinks[attr['data-project-link']], 'Link do projeto divergente da configuração');
 }
 for (const [, labels] of html.matchAll(/aria-labelledby="([^"]+)"/g)) {
   for (const id of labels.split(/\s+/)) assert.ok(ids.includes(id), `Rótulo inexistente: ${id}`);

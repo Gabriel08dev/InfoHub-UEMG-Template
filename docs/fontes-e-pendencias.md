@@ -15,7 +15,7 @@ Conferência realizada em **29/10/2026**. O site não autentica estudantes e nã
 
 - Horários específicos da secretaria e da informática, e eventuais prazos de resposta. Os horários gerais publicados para a unidade **não** foram atribuídos a esses setores.
 - Confirmação técnica detalhada da recuperação atual do Lyceum para todos os perfis de estudante.
-- Nomes e responsabilidades da equipe e da orientação docente.
+- Identificação e responsabilidades da orientação docente. Os integrantes do Grupo 6 e suas publicações profissionais foram informados pelo responsável pelo projeto em 29/10/2026; consulte `equipe.md`.
 - Eventual reconhecimento ou endosso institucional: não confirmado e não alegado.
 
 ## Critérios editoriais
